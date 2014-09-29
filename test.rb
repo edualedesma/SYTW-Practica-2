@@ -9,7 +9,9 @@ def app
 	Sinatra::Application
 end
 
-it "deberia ir a la index" do
-    get '/'
-    assert last_response.ok?
+describe 'Populares_Twitter' d
+  it "deberia ir a la index" do
+      get '/'
+      assert last_response.ok?
+  end
 end
