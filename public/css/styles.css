@@ -1,6 +1,6 @@
 p{ 
-	color: black; 
- 	font-family: Verdana;
+	/*color: black; 
+ 	font-family: Verdana;*/
 }
 
 #cabecera{
@@ -45,21 +45,27 @@ p{
 }
 
 #warning{
-	background-color: #FFCC66;
+	/*background-color: #FFCC66;
 	font-size: 1.5em;
-	color: red;
+	color: blue;
 	padding-left: 2em;
 	padding-right: 2em;
 	padding-top: 0.9em;
-	padding-bottom: 0.9em;
+	padding-bottom: 0.9em;*/
 }
 
 #col{
-	background-color: #E8E8E8 ;
-	text-align: left;
-	margin-bottom: 1em;
+	/*background-color: blue ;
+	text-align: center;
+	margin-bottom: 1em;*/
+	color: blue;
 }
 
 h5 {
 	text-align: right;
+}
+
+.form-group input {
+	color: blue;
+
 }
