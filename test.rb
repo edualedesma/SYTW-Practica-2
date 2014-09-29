@@ -24,4 +24,10 @@ describe 'Populares_Twitter' d
 		assert_match "Introduzca su nombre en Twitter:", last_response.body
   end
   
+   it "Número de seguidores" do
+		post "/", {:n=>"1"}
+		assert_match "¿Cuántos amigos desea ver? (máximo 10)", last_response.body
+   end
+
+  
 end
