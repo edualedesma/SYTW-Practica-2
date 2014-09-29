@@ -13,7 +13,7 @@ Despliegue en Heroku de la práctica anterior, [contar la popularidad de nuestro
 
 2. Configuraremos el fichero `configure.rb` siguiendo las directrices del fichero `configure.rb.example`
 
-##Ejecución (pendiente)
+##Ejecución de la aplicación web(pendiente)
 
 Podemos ejecutarlo así:
 
@@ -21,6 +21,11 @@ Podemos ejecutarlo así:
 2. `rake`
 
 Luego, iremos a [http://localhost:4567/](http://localhost:4567/) para poder usar la aplicación.
+
+##Ejecución de las pruebas unitarias (pendiente)
+
+##Despliegue en Heroku (pendiente)
+
 
 *Sistemas y Tecnologías Web - Eduardo Javier Acuña Ledesma | Sergio Díaz González*
 
