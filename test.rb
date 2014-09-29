@@ -18,6 +18,10 @@ describe 'Populares_Twitter' d
 		get '/'
 		assert_match "<title>Amigos más pupulares en Twitter - Con Sinatra</title>", last_response.body
   end
-    
+   
+  it "Usuario" do
+		post "/", {:firstname=>'EduALedesma'}
+		assert_match "Introduzca su nombre en Twitter:", last_response.body
+  end
   
 end
