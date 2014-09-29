@@ -14,4 +14,10 @@ describe 'Populares_Twitter' d
       get '/'
       assert last_response.ok?
   end
+  it "test titulo" do
+		get '/'
+		assert_match "<title>Amigos más pupulares en Twitter - Con Sinatra</title>", last_response.body
+  end
+    
+  
 end
