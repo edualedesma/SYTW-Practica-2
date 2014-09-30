@@ -10,39 +10,38 @@ def app
 end
 
 describe 'Populares_Twitter' do
- 	it "deberia ir a la index" do
-      	get '/'
-      	assert last_response.ok?
-  	end
+  it "deberia ir a la index" do
+    get '/'
+    assert last_response.ok?
+  end
 
-  	it "test titulo" do
+  it "test titulo" do
 		get '/'
 		assert_match "<title>Amigos más pupulares en Twitter - Con Sinatra</title>", last_response.body
-  	end
+  end
    
-  	it "Usuario" do
+  it "Usuario" do
 		post "/", {:firstname=>'EduALedesma'}
 		assert_match "Introduzca su nombre en Twitter:", last_response.body
-  	end
+  end
   
-   	it "Número de seguidores" do
+  it "Número de seguidores" do
 		post "/", {:n=>"1"}
 		assert_match "¿Cuántos amigos desea ver? (máximo 10)", last_response.body
-   	end
+  end
 	
-	
-  	it "test imagen" do
+  it "test imagen" do
 		get '/'
 		assert_match '<img id="bird" src="/bird_icon_white.png" WIDTH=150 HEIGHT=100 />', last_response.body
-  	end
+  end
    	
-  	it "tes pie" do
+  it "tes pie" do
 		get '/'
 		assert_match "<p>Sistemas y Tecnologías Web - Eduardo Javier Acuña Ledesma | Sergio Díaz González</p>", last_response.body
-  	end	
+  end	
     
-   	#it "Usuario erroneo" do
+  #it "Usuario erroneo" do
 	#	post "/", {:firstname=>'EduALedesma1314112r'}
 	#	assert_not_match "Introduzca su nombre en Twitter:", last_response.body
-   	#end
+  #end
 end
