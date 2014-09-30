@@ -11,22 +11,26 @@ Además hemos mejorado la interfaz gráfica añadiendo Bootstrap. Hemos creado u
 
 ##Instalación y visualización en local
 
-1. Instalaremos las gemas necesarias: `bundle install`
+1. Lo primero que haremos será clonar el repositorio de github [SYTW-Practica-2](https://github.com/alu3286/SYTW-Practica-2/) de la siguiente forma:
+	`git clone git@github.com:alu3286/SYTW-Practica-2.git`
+	
+2. Instalaremos las gemas necesarias: `bundle install`
 
-2. Configuraremos el fichero `configure.rb` siguiendo las directrices del fichero `configure.rb.example`
+3. Configuraremos el fichero `configure.rb` siguiendo las directrices del fichero `configure.rb.example`. En el caso de que ya esté el fichero `configure.rb` lo dejamos tal cual.
 
-Podemos ejecutarlo así:
+Una vez hecho esto, podemos ejecutar la aplicación así:
 
 1. `ruby twitter.rb`
 2. `rake`
+3. `rake gem` --> Para lanzar la aplicación utilizando las gemas del Gemfile.
 
-Luego, iremos a [http://localhost:4567/](http://localhost:4567/) para poder usar la aplicación.
+Luego, iremos a [http://localhost:4567/](http://localhost:4567/) para poder usar la aplicación, en el caso de haber ejecutado cualquiera de las dos primeras instrucciones. En el caso de haber ejecutado la tercera, tendremos que ir en nuestro navegador a [http://localhost:9292/](http://localhost:9292/)
 
 Hemos modificado el Rakefile para que cuando se invoque ejecute `ruby twitter.rb` por defecto.
 
 ###Pruebas unitarias
 
-Luego nos disponemos a ejecutar las pruebas en local. Para ello ejecutamos el comando `rake test` en el directorio de nuestro proyecto. 
+Para poder llevar a cabo las pruebas, tenemos que ejecutar en local el comando `rake test` en el directorio de nuestro proyecto.
 
 Podemos comprobar que los distintos tests que hemos planteado no dan ningún fallo. Hemos planteado las distintas pruebas:
 
@@ -45,7 +49,7 @@ Podemos comprobar que los distintos tests que hemos planteado no dan ningún fal
 
 ##Visualización en Heroku 
 
-Hemos colgado nuestra aplicación en Heroku. Acceder a la página de nuestra aplicación [aquí](http://popular-twitter.herokuapp.com/) 
+Hemos desplegado nuestra aplicación en Heroku. Para poder acceder a la página de nuestra aplicación pincharemos [aquí](http://popular-twitter.herokuapp.com/). 
 
 ##Recursos
 
