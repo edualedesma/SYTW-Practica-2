@@ -29,7 +29,14 @@ describe 'Populares_Twitter' do
 		post "/", {:n=>"1"}
 		assert_match "¿Cuántos amigos desea ver? (máximo 10)", last_response.body
    	end
-    
+	
+	
+  	it "test imagen" do
+		get '/'
+		assert_match '<img id="bird" src="/bird_icon_white.png" WIDTH=150 HEIGHT=100 />', last_response.body
+  	end
+   	
+
    	#it "Usuario erroneo" do
 	#	post "/", {:firstname=>'EduALedesma1314112r'}
 	#	assert_not_match "Introduzca su nombre en Twitter:", last_response.body
