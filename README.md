@@ -3,19 +3,17 @@
 **Autores: Eduardo Javier Acuña Ledesma | Sergio Díaz González**
 
 
-##Descripción
+#Descripción
 
 Despliegue en Heroku de la práctica anterior, [contar la popularidad de nuestros amigos en Twitter](https://github.com/alu3286/SYTW-Practica-1). Además se implementaron tests y se utilizaron los [issues de Github](https://github.com/alu3286/SYTW-Practica-2/issues).
 
 Además hemos mejorado la interfaz gráfica añadiendo Bootstrap. Hemos creado una carpeta test en el directorio donde guardamos los archivos relacionado con el mismo.
 
-##Instalación 
+##Instalación y visualización en local
 
 1. Instalaremos las gemas necesarias: `bundle install`
 
 2. Configuraremos el fichero `configure.rb` siguiendo las directrices del fichero `configure.rb.example`
-
-##Vizualización de la página web en local.
 
 Podemos ejecutarlo así:
 
@@ -26,13 +24,9 @@ Luego, iremos a [http://localhost:4567/](http://localhost:4567/) para poder usar
 
 Hemos modificado el Rakefile para que cuando se invoque ejecute `ruby twitter.rb` por defecto.
 
-##Vizualización en Heroku 
+###Pruebas unitarias
 
-Hemos colgado nuestra aplicación en Heroku. Acceder a la página de nuestra aplicación [aquí](http://popular-twitter.herokuapp.com/) 
-
-##Ejecución de las pruebas unitarias
-
-Para ejecutar las pruebas ejecutamos el comando `rake test` en el directorio de nuestro proyecto. 
+Luego nos disponemos a ejecutar las pruebas en local. Para ello ejecutamos el comando `rake test` en el directorio de nuestro proyecto. 
 
 Podemos comprobar que los distintos tests que hemos planteado no dan ningún fallo. Hemos planteado las distintas pruebas:
 
@@ -47,6 +41,11 @@ Podemos comprobar que los distintos tests que hemos planteado no dan ningún fal
 5. Comprobar imagen de cabecera.
 
 6. Comprobar pie de la página.
+
+
+##Visualización en Heroku 
+
+Hemos colgado nuestra aplicación en Heroku. Acceder a la página de nuestra aplicación [aquí](http://popular-twitter.herokuapp.com/) 
 
 ##Recursos
 
