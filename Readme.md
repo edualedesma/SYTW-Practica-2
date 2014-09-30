@@ -7,31 +7,50 @@
 
 Despliegue en Heroku de la práctica anterior, [contar la popularidad de nuestros amigos en Twitter](https://github.com/alu3286/SYTW-Practica-1). Además se implementaron tests y se utilizaron los [issues de Github](https://github.com/alu3286/SYTW-Practica-2/issues).
 
-##Instalación (pendiente)
+Además hemos mejorado la interfaz gráfica añadiendo Bootstrap. Hemos creado una carpeta test en el directorio donde guardamos los archivos relacionado con el mismo.
 
-1. Instalaremos las gemas necesarias: 'bundle install'
+##Instalación 
 
-2. Configuraremos el fichero 'configure.rb` siguiendo las directrices del fichero 'configure.rb.example'
+1. Instalaremos las gemas necesarias: `bundle install`
 
-##Ejecución de la aplicación web
+2. Configuraremos el fichero `configure.rb` siguiendo las directrices del fichero `configure.rb.example`
+
+##Vizualización de la página web en local.
 
 Podemos ejecutarlo así:
 
-1. 'ruby twitter.rb'
-2. 'rake'
+1. `ruby twitter.rb`
+2. `rake`
 
 Luego, iremos a [http://localhost:4567/](http://localhost:4567/) para poder usar la aplicación.
 
+Hemos modificado el Rakefile para que cuando se invoque ejecute `ruby twitter.rb` por defecto.
+
+##Vizualización en Heroku 
+
+Hemos colgado nuestra aplicación en Heroku. Acceder a la página de nuestra aplicación [aquí](http://popular-twitter.herokuapp.com/) 
+
 ##Ejecución de las pruebas unitarias
 
-Para ejecutar las pruebas ejecutamos el comando 'rake test' en el directorio de nuestro proyecto.
+Para ejecutar las pruebas ejecutamos el comando `rake test` en el directorio de nuestro proyecto. 
 
+Podemos comprobar que los distintos tests que hemos planteado no dan ningún fallo. Hemos planteado las distintas pruebas:
 
-##Despliegue en Heroku 
+1. Comprobar que se accede a la página
 
-Acceder a la página http://popular-twitter.herokuapp.com/ 
+2. Comprobar que está colocado el título.
+
+3. Comprobar usuario.
+
+4. Comprobar número de seguidores.
+
+5. Comprobar imagen de cabecera.
+
+6. Comprobar pie de la página.
 
 ##Recursos
+
+Para desarrollar esta práctica hemos usado los siguientes recursos.
 
 * [Pruebas unitarias](http://nereida.deioc.ull.es/~lpp/perlexamples/node365.html)
 * [Repositorio number_cruncher](https://github.com/crguezl/number_cruncher)
