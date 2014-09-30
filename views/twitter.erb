@@ -15,11 +15,7 @@
       		<div class="site-wrapper-inner">
         		<div class="cover-container">
           			<div class="masthead clearfix">
-            			
-              					<h3 class="masthead-brand"><img src="/bird_icon_white.png" WIDTH=150 HEIGHT=100 /></h3>
-              				
-
-            			
+              			<img id="bird" src="/bird_icon_white.png" WIDTH=150 HEIGHT=100 />
           			</div>
           			<div class="inner cover">
             			<h1 class="cover-heading">Amigos más Populares</h1>
@@ -46,15 +42,14 @@
 								
 								<%else%>
 									<div class="panel panel-default">
-									  <!-- Default panel contents -->
-									  <div class="panel-heading">Amigos más populares</div>
-									  <!-- Table -->
-									  <table class="table">
-									  	
-									  			<% p@usuario.sort_by {|k,v| -v}.each {|usuario, cuenta| %>
-													<tr><td id="col"><%= usuario %>: <%= cuenta %></td></tr>
-												<% } %>
-									  </table>
+										<!-- Default panel contents -->
+									  	<div class="panel-heading">Amigos más populares</div>
+									  	<!-- Table -->
+									  	<table class="table">
+							  		  		<% p@usuario.sort_by {|k,v| -v}.each {|usuario, cuenta| %>
+												<tr><td id="col"><%= usuario %>: <%= cuenta %></td></tr>
+											<% } %>
+									  	</table>
 									</div>
 								<%end%>
 							<%end%>
